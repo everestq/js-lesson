@@ -1,49 +1,31 @@
 'use strict';
 
-// a = 5;
-// console.log(a);
+let num = 50;
+if (num < 49) {
+  console.log('neverno');
+} else if (num > 100) {
+  console.log('mnogo');
+} else {
+  console.log('verno');
 
+}
 
+(num == 50) ? console.log('verno'): console.log('neverno');
 
-console.log(4 / 0);
-console.log('string' * 9);
-let something;
-console.log(something);
-
-let persone = {
-  name: "John",
-  age: 25,
-  isMarried: false
-};
-
-console.log(persone["name"]);
-
-let arr = ['plum.png', 'orange.jpeg', 'apple.bmp'];
-
-console.log(arr[0]);
-
-// alert("Hello");
-// let answer = confirm("Are you here?");
-
-// console.log(answer);
-
-// let answer = +prompt("ЕСть ли вам 18?", "Да");
-
-// console.log(typeof (answer));
-
-// console.log("arr" + " - object");
-// console.log(4 + +" - object");
-
-let incr = 10,
-  decr = 10;
-
-console.log(incr++);
-console.log(decr--);
-
-console.log(5 % 2);
-console.log("2" === 2);
-
-let isChecked = false,
-  isClose = false;
-
-console.log(isChecked || !isClose);
+switch (num) {
+  case num < 49:
+    console.log('neverno');
+    break;
+  case num > 100:
+    console.log('mnogo');
+    break;
+  case num > 80:
+    console.log('vse ese mnogo');
+    break;
+  case 50:
+    console.log('verno');
+    break;
+  default:
+    console.log('что то пошло не так');
+    break;
+}
